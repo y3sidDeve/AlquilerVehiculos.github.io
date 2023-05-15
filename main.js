@@ -23,6 +23,7 @@ function checking() {
         seguro_TR = 0;
     }
 }
+seguroCheckbox.addEventListener('change', checking);
 
 formulario.addEventListener('submit', function (event) {
     event.preventDefault();
