@@ -14,9 +14,15 @@ const formulario = document.querySelector('#miFormulario');
 const seguroCheckbox = formulario.querySelector('#seguro');
 let seguro_TR = 0;
 
-seguroCheckbox.addEventListener('change', function () {
-    seguro_TR = seguroCheckbox.checked ? parseFloat(seguroCheckbox.value) : 0;
-});
+function checking() {
+    if (seguroCheckbox.checked) {
+        seguro_TR = parseFloat(seguroCheckbox.value);
+        console.log(seguro_TR);
+    }
+    else {
+        seguro_TR = 0;
+    }
+}
 
 formulario.addEventListener('submit', function (event) {
     event.preventDefault();
