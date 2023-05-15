@@ -25,16 +25,10 @@ function checking() {
 }
 seguroCheckbox.addEventListener('change', checking);
 
-formulario.addEventListener('submit', function (event) {
-    event.preventDefault();
-    // Aquí puedes enviar los datos del formulario, incluyendo seguro_TR
-    console.log('Seguro:', seguro_TR);
-});
 const refreshButton = document.querySelector('#refresh');
-
-		refreshButton.addEventListener('click', function() {
-			location.reload();
-		});
+refreshButton.addEventListener('click', function() {
+  location.reload();
+});
 
 // funcion para sacar los valores
 
